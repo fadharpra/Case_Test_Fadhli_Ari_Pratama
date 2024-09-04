@@ -1,1 +1,2 @@
 ./terraform-config-script/providers.tf
+./terraform-config-script/.terraform
