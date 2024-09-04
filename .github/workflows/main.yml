@@ -22,7 +22,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          aws s3 sync . s3://idn-new-timmy-6 --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync . s3://idn-new-timmy-6.serverless.my.id --delete --exclude ".git/*" --exclude ".github/*"
 
       - name: Invalidate CloudFront
         env:
