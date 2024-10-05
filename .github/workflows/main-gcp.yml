@@ -21,4 +21,4 @@ jobs:
 
       - name: Copy files to GCP
         run: |
-          gsutil cp /home/fadharpra/gcp-web-static/* gs://gdg-website-bucket/
+          gsutil cp . gs://gdg-website-bucket/
