@@ -21,4 +21,4 @@ jobs:
 
       - name: Copy files to GCP
         run: |
-          gsutil cp . gs://gcr-website-bucket/
+          gsutil -m cp -r . gs://gcr-website-bucket/
